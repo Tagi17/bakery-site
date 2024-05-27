@@ -31,3 +31,22 @@ body {
     text-wrap: balance;
   }
 }
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype'),
+       url('/fonts/Montserrat/static/Montserrat-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.highlightedSection{
+  background-color: #ff9898;
+  height: 50vh;
+}
+.highlightedSection2{
+  background-color: #FFFDD0;
+  height: 50vh;
+}
