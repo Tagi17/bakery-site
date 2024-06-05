@@ -1,11 +1,14 @@
 import "./globals.css";
 
+import { Cormorant } from "next/font/google";
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
+import { Navbar } from "./components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 const montserrat = Montserrat({ subsets: ["latin"] });
+const cormorant = Cormorant({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,7 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>{children}</body>
+      <body className={cormorant.className}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

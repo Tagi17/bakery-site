@@ -1,5 +1,7 @@
 'use client'
 
+import "../globals.css";
+
 import React, { useEffect, useRef, useState } from "react";
 
 import Image from 'next/image'
@@ -12,35 +14,40 @@ export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mounted, setMounted] = useState(false);
   const router = useRouter();
+  const scrollableRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    setMounted(true);
+
     const handleScroll = () => {
-      const scrollTop = window.scrollY;
+      const scrollTop = scrollableRef.current ? scrollableRef.current.scrollTop : 0;
       setScrolled(scrollTop > window.innerHeight / 2);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    const element = scrollableRef.current;
+
+    if (element) {
+      element.addEventListener('scroll', handleScroll);
+      return () => {
+        element.removeEventListener('scroll', handleScroll);
+      };
+    }
   }, []);
 
+  if (!mounted) {
+    return null;
+  }
     
   return (
-    <div>
-      <div className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
-        <nav className="navbar">
-          <ul>
-            <li className="active"></li>
-            <li><Link href="#">Recipes</Link></li>
-            <li><Link href="#">About</Link></li>
-            <li><Link href="#">Menu</Link></li>
-             <Link href="/">
-              <Image src="/logo.png" width={100} height={100} alt="logo" className=" max-h-full p-5" /> 
-            </Link>
-            <li><Link href="#">Contact Us</Link></li>
-          </ul>
-        </nav>
+    <div className="bg-[#fff7e7]">
+      <div className="navbar">
+        <Link href="/recipe" className="">Recipes</Link>
+        <Link href="/about" className="">About</Link>
+          <Link href="/">
+            <Image src="/logo.png" width={100} height={100} alt="logo"  />
+          </Link>
+        <Link href="/menu" className="">Menu</Link>
+        <Link href="/contact" className="">Contact Us</Link>
       </div>
     </div>
   )
