@@ -1,17 +1,22 @@
-
-
+import Image from 'next/image'
+import rome from "../rome.jpg"
 
 const About = () => {
   return(
   <div className="">
       <div className="bg-cream p-10">
-        <h1 className="text-4xl font-bold text-soft-pink mb-6 mt-35">About Us</h1>
-        <p className="text-lg text-mint-green mb-4">
-          I always loved baking growing up and making desserts for my family and friends to eat because seeing them happy and enjoying is always worth it to me.
-        </p>
-        <p className="text-lg text-mint-green mb-4">
-          I started this company because I want to share my desserts all around the world for everyone to try and experience because eating is a part of life and everyone deserves to get their hands on some good dessert.
-        </p>
+        <h1 className="text-4xl text-center font-bold text-soft-pink mb-6 mt-20">About</h1>
+        <div className="max-w-4xl mx-auto px-4">
+          <p className="text-3xl text-mint-green mb-4">
+            I always loved baking growing up and making desserts for my family and friends to eat because seeing them happy and enjoying is always worth it to me.
+          </p>
+          <p className="text-3xl text-mint-green mb-4">
+            I founded this company to share my desserts globally, allowing everyone to enjoy high-quality treats, because everyone deserves a little sweetness in life.
+          </p>
+        </div>
+        <div className="flex justify-center">
+          <Image src={rome} width={500} height={500} alt="me" />
+        </div>
       </div>
       <div className="bg-light-beige p-10">
         <h2 className="text-3xl font-bold text-pastel-yellow mb-6">Our Team</h2>

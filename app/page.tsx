@@ -1,22 +1,29 @@
 import "./globals.css";
 
 import Image from "next/image";
-import crunchnw from "./crunchnw.png"
+import Link from 'next/link';
+import crunchnw from "./crunchnw.png";
 import mousse from "./mousse.png";
 import styles from "./components/Navbar.module.css";
 
 const Home = () => {
   return (
     <div>
-      <div className="bg-[#f4f4e8] h-custom-height flex items-center justify-center relative">
-        <h1 className="text-black text-4xl absolute top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          Celestine Crunch
+      <div className="bg-[#fff7e7] h-auto md:h-custom-height flex flex-col md:flex-row items-center justify-center relative p-4">
+        <h1 className="text-black text-5xl text-center mb-4 md:mb-0 md:absolute md:top-1/4 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2">
+          Taste the Exceptional — Indulge in Our Unique Handcrafted Pastries!
         </h1>
-        <div>
-          <Image src={crunchnw} alt="cookie" width={400} height={400} className=""/>
+        <div className="flex justify-center">
+          <Image
+            src={crunchnw}
+            alt="cookie"
+            width={400}
+            height={400}
+            className=""
+          />
         </div>
       </div>
-      <div className="bg-[#fcecf0] relative flex items-center justify-center">
+      <div className="bg-[#ffedd2] relative flex items-center justify-center">
         <Image
           src={mousse}
           alt="food"
@@ -25,11 +32,25 @@ const Home = () => {
           className="relative z-10"
         />
         <h2 className="text-black text-3xl absolute z-20 text-center">
-          2 BOXES OF 6 LARGE CANELÉS PURCHASED = THE 3RD FREE
+         BUY NOW
         </h2>
       </div>
-      <div className="bg-[#fceeec] h-screen flex items-center justify-center">
-        <h1 className="text-black text-4xl">Woo</h1>
+      <div className="bg-[#ffedd2]  h-screen flex flex-col items-center justify-center p-5 text-center">
+        <div className="text-black text-4xl">Welcome to</div>
+        <div className="text-black text-6xl p-5 text-center">
+          Celestine Crunch
+        </div>
+        <div className="max-w-7xl mx-auto px-5">
+          <div className="text-black text-4xl pt-5 pb-5 mb-5 text-center">
+            Born from a profound passion for desserts, Celestine Crunch is
+            dedicated to offering unique and eclectic flavor combinations. We
+            strive to create delightful culinary experiences, inviting everyone to
+            explore the joy of our creations.
+          </div>
+        </div>
+        <Link href="/about" passHref>
+          <button className="button-83 text-2xl pt-6">Our Story</button>
+        </Link>
       </div>
     </div>
   );
