@@ -1,7 +1,7 @@
 import "./globals.css";
 
 import Image from "next/image";
-import Link from 'next/link';
+import Link from "next/link";
 import crunchnw from "./crunchnw.png";
 import mousse from "./mousse.png";
 import styles from "./components/Navbar.module.css";
@@ -9,7 +9,7 @@ import styles from "./components/Navbar.module.css";
 const Home = () => {
   return (
     <div>
-      <div className="bg-[#fff7e7] h-auto md:h-custom-height flex flex-col md:flex-row items-center justify-center relative p-4">
+      <div className="bg-[#fcf6e8] h-auto md:h-custom-height flex flex-col md:flex-row items-center justify-center relative p-4">
         <h1 className="text-black text-5xl text-center mb-4 md:mb-0 md:absolute md:top-1/4 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2">
           Taste the Exceptional — Indulge in Our Unique Handcrafted Pastries!
         </h1>
@@ -23,7 +23,7 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="bg-[#ffedd2] relative flex items-center justify-center">
+      <div className="bg-[#fcf6e8] relative flex items-center justify-center">
         <Image
           src={mousse}
           alt="food"
@@ -32,10 +32,10 @@ const Home = () => {
           className="relative z-10"
         />
         <h2 className="text-black text-3xl absolute z-20 text-center">
-         BUY NOW
+          BUY NOW
         </h2>
       </div>
-      <div className="bg-[#ffedd2]  h-screen flex flex-col items-center justify-center p-5 text-center">
+      <div className="bg-[#fcf6e8]  h-screen flex flex-col items-center justify-center p-5 text-center">
         <div className="text-black text-4xl">Welcome to</div>
         <div className="text-black text-6xl p-5 text-center">
           Celestine Crunch
@@ -44,8 +44,8 @@ const Home = () => {
           <div className="text-black text-4xl pt-5 pb-5 mb-5 text-center">
             Born from a profound passion for desserts, Celestine Crunch is
             dedicated to offering unique and eclectic flavor combinations. We
-            strive to create delightful culinary experiences, inviting everyone to
-            explore the joy of our creations.
+            strive to create delightful culinary experiences, inviting everyone
+            to explore the joy of our creations.
           </div>
         </div>
         <Link href="/about" passHref>

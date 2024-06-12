@@ -4,7 +4,7 @@ import { Cormorant } from "next/font/google";
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
-import { Navbar } from "./components/Navbar";
+import Navbar from "./components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 const montserrat = Montserrat({ subsets: ["latin"] });
@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cormorant.className}>
+      <body className={`min-h-screen bg-[#fcf6e8] ${cormorant.className}`}>
         <Navbar />
         {children}
       </body>

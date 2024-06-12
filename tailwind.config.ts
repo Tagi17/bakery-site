@@ -10,8 +10,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))"
       },
       height: {
         "custom-height": '75vh',
@@ -35,8 +34,33 @@ const config: Config = {
         '37': '13rem', 
         '40': '15rem', 
       },
+      colors: {
+        primary: {
+          100: '#171717',
+          200: '#fcf6e8', //i think this is perfect
+          300: '#211ddb',
+          400: '#ffedd2', //this is the other one i was using on the home page
+          500: '#faf1da', //this is very dark
+          600: '#fcf7e8',
+        },
+        secondary: {
+          100: '#d1e63e',
+          200: '#516aec',
+          300: '#342d99',
+          400: '#f310e1',
+          500: '#20e62e',
+          600: '#6ce316',
+        },
+      },
+    },
+  },
+  // Define the responsive variants for the display utility if really necessary
+  variants: {
+    extend: {
+      display: ['responsive'],
     },
   },
   plugins: [],
 };
+
 export default config;
