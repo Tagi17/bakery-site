@@ -1,0 +1,43 @@
+{
+    "name": "Île Flottante aux Fraises",
+    "description": "Light and fluffy floating islands with a vibrant strawberry coulis, perfect for a summer dessert.",
+    "components": [
+      {
+        "name": "Strawberry Meringues",
+        "ingredients": [
+          "2 Egg whites",
+          "100g Sugar",
+          "1 tsp Strawberry powder",
+          "¼ tsp Vanilla"
+        ],
+        "instructions": [
+          "Mix the eggs and sugar without beating too much.",
+          "Bring the cream and milk to a boil and combine the two mixtures."
+        ]
+      },
+      {
+        "name": "Crème Anglaise",
+        "ingredients": [
+          "200ml Milk",
+          "2 Egg yolks",
+          "40g Sugar",
+          "1/2 tsp Vanilla"
+        ],
+        "instructions": [
+          "Heat the milk to 183°F (84°C) and slowly pour over the mixed egg yolks and sugar, whisking constantly.",
+          "Return the mixture to the heat and stir until it thickens."
+        ]
+      },
+      {
+        "name": "Sugar Caramel Strands",
+        "ingredients": [
+          "100g Sugar",
+          "30ml Water"
+        ],
+        "instructions": [
+          "Heat the sugar and water until caramelized.",
+          "Carefully pour onto a silicone mat and let harden."
+        ]
+      }
+    ]
+  }
