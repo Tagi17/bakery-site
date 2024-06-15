@@ -10,12 +10,18 @@ const About = () => {
         </h1>
         <div className="max-w-4xl mx-auto px-4">
           <p className="text-3xl text-mint-green mb-4 text-center leading-relaxed">
-            Hi, I&apos;m Nazia
+            Hi I&apos;m Nazia,
           </p>
           <p className="text-3xl text-mint-green mb-4 text-center leading-relaxed">
-            I always loved baking growing up and making desserts for my family
-            and friends to eat because seeing them happy and enjoying is always
-            worth it to me.
+            I&apos;m a 23 year old dessert enthusiast providing a range of baking
+            services to businesses and customers.
+          </p>
+          <p className="text-3xl text-mint-green mb-4 text-center leading-relaxed">
+            I&apos;ve always had a deep passion for baking since my childhood. In the past I wished to pursue a
+            professional culinary education, however, seeing
+            as I did not have the means to do so I decided to embark on my
+            culinary journey at home.
+            {/* I discovered the joy of creating desserts after seeing my family and friends happy. Seeing them enjoying my sweets is always worth it to me. */}
           </p>
           <hr className="my-4 border-t border-soft-pink" />
           <p className="text-3xl text-mint-green mb-4 text-center leading-relaxed">

@@ -63,7 +63,7 @@ const Navbar = () => {
             isOpen ? "flex" : "hidden"
           } items-center justify-center text-center absolute inset-0 md:relative md:flex md:flex-row md:space-x-4 shadow-md md:shadow-none transition-transform duration-300 ease-in-out z-50`}
         >
-          <Link href="/recipes">
+          <Link href="/recipes/recipe-id">
             <div className="text-lg hover:text-green-300 cursor-pointer py-1">
               Recipes
             </div>
@@ -73,7 +73,12 @@ const Navbar = () => {
               About
             </div>
           </Link>
-          <Link href="/menu">
+          {/* <Link href="/menu">
+            <div className="text-lg hover:text-green-300 cursor-pointer py-1">
+              Menu
+            </div>
+          </Link> */}
+          <Link href="/order">
             <div className="text-lg hover:text-green-300 cursor-pointer py-1">
               Menu
             </div>

@@ -1,23 +1,26 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 interface Recipe {
-    slug: string;
+    id: string;
     name: string;
-    imageUrl: string;  // Uncomment and use if you're going to include images
+    imageUrl: string;
     description: string;
-  }
-  
-  // Type the props of the component using the Recipe interface
-  interface RecipeCardProps {
+}
+
+interface RecipeCardProps {
     recipe: Recipe;
-  }
-  
-  const RecipeCard: React.FC<RecipeCardProps> = ({ recipe }) => {
+}
+
+const RecipeCard: React.FC<RecipeCardProps> = ({ recipe }) => {
     return (
-      <Link href={`/recipes/${recipe.slug}`}>
+      <Link href={`/recipes/${recipe.id}`}>
         <a className="block border border-gray-200 shadow-md hover:shadow-lg rounded-lg overflow-hidden transition-shadow duration-300">
-          {/* Uncomment and use if you're going to include images
-          <img src={recipe.imageUrl} alt={recipe.name} className="w-full h-48 object-cover" /> */}
+          {recipe.imageUrl && (
+            <div className="w-full h-48 overflow-hidden">
+              <Image src={recipe.imageUrl} alt={recipe.name} layout="responsive" width={100} height={48} objectFit="cover" />
+            </div>
+          )}
           <div className="p-4">
             <h3 className="text-lg font-semibold text-gray-800">{recipe.name}</h3>
             <p className="text-gray-600">{recipe.description}</p>
@@ -25,6 +28,6 @@ interface Recipe {
         </a>
       </Link>
     );
-  };
+};
   
-  export default RecipeCard;
+export default RecipeCard;

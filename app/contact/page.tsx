@@ -2,6 +2,9 @@ const Contact = () => {
   return (
     <div>
       <div className="">
+        <h1 className="text-4xl text-center font-bold text-soft-pink mb-6 mt-20 shadow-lg">
+          Contact Us
+        </h1>
         <div className="max-w-4xl mx-auto px-4 mt-20 mb-6">
           <h1 className="text-4xl text-center text-soft-pink mb-4">
             Feel free to contact me regarding any order-related questions.
