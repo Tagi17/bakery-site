@@ -51,6 +51,9 @@ const config: Config = {
           500: '#20e62e',
           600: '#6ce316',
         },
+        minHeight: {
+          '450': '450px',  // Now you can use class 'min-h-450'
+        }
       },
     },
   },

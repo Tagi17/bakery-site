@@ -1,24 +1,38 @@
 [
-    {
-      "id": "ile-flottante",
-      "name": "Île Flottante",
-      "description": "A delightful French dessert.",
-      "imageUrl": "/images/ile-flottante.jpg"
-    }
-  ]
-[
-    {
-      "id": "Sable",
-      "name": "Île Flottante",
-      "description": "A delightful French dessert.",
-      "imageUrl": "/images/ile-flottante.jpg"
-    }
-  ]
-[
-    {
-      "id": "Fondant",
-      "name": "Île Flottante",
-      "description": "A delightful French dessert.",
-      "imageUrl": "/images/ile-flottante.jpg"
-    }
-  ]
+  {
+    "id": "1",
+    "name": "Île Flottante",
+    "description": "A delightful French dessert.",
+    "imageUrl": "/images/ile-flottante.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Sablé",
+    "description": "A classic shortbread biscuit from France.",
+    "imageUrl": "/images/sable.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Chocolate Fondant",
+    "description": "A rich chocolate cake with a gooey center.",
+    "imageUrl": "/images/fondant.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Île Flottante",
+    "description": "A delightful French dessert.",
+    "imageUrl": "/images/ile-flottante.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Sablé",
+    "description": "A classic shortbread biscuit from France.",
+    "imageUrl": "/images/sable.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Chocolate Fondant",
+    "description": "A rich chocolate cake with a gooey center.",
+    "imageUrl": "/images/fondant.jpg"
+  }
+]
