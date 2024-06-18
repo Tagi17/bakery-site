@@ -6,7 +6,7 @@ const Contact = () => {
           Contact Us
         </h1>
         <div className="max-w-4xl mx-auto px-4 mt-20 mb-6">
-          <h1 className="text-4xl text-center text-soft-pink mb-4">
+          <h1 className="text-3xl text-center text-soft-pink mb-4">
             Feel free to contact me regarding any order-related questions.
             Please allow 5-7 business days for a response. We value your
             patience and understanding.
@@ -17,10 +17,10 @@ const Contact = () => {
         </div>
       </div>
 
-      <h1 className="text-4xl text-center text-soft-pink  ">
+      <h1 className="text-3xl text-center text-soft-pink  ">
         Contact Me Here:
       </h1>
-      <h1 className="text-4xl text-center text-soft-pink mb-6 ">
+      <h1 className="text-3xl text-center font-medium text-soft-pink mb-6 ">
         celestinecrunch@gmail.com
       </h1>
     </div>

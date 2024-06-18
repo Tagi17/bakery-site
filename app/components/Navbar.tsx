@@ -48,7 +48,7 @@ const Navbar = () => {
         {/* Website name centered */}
         <Link href="/">
           <div className="text-6xl font-bold cursor-pointer mx-auto flex-1 justify-center text-center tracking-widest">
-            Celestius
+            Celestine Crunch
           </div>
         </Link>
 
@@ -80,7 +80,7 @@ const Navbar = () => {
           </Link> */}
           <Link href="/order">
             <div className="text-lg hover:text-green-300 cursor-pointer py-1">
-              Menu
+              Order
             </div>
           </Link>
           <Link href="/contact">

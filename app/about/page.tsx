@@ -4,7 +4,7 @@ import rome from "../rome.jpg";
 const About = () => {
   return (
     <div className="">
-      <div className="bg-cream">
+      <div className="">
         <h1 className="text-4xl text-center font-bold text-soft-pink mb-6 mt-20 shadow-lg">
           About
         </h1>
