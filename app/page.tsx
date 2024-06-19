@@ -1,6 +1,6 @@
 import "./globals.css";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import crunchnw from "./crunchnw.png";
 import mousse from "./mousse.png";
@@ -23,7 +23,7 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="bg-[#fcf6e8] relative flex items-center justify-center">
+      {/* <div className="bg-[#fcf6e8] relative flex items-center justify-center">
         <Image
           src={mousse}
           alt="food"
@@ -34,8 +34,25 @@ const Home = () => {
         <h2 className="text-black text-3xl absolute z-20 text-center">
           BUY NOW
         </h2>
+      </div> */}
+      <div className="">
+        <div className="max-w-7xl mx-auto px-5 flex flex-col items-center">
+          <div className="text-black text-5xl text-center ">
+            Limited Edition Summer Cookies
+          </div>
+          <div className="text-black text-3xl text-center pt-5 pb-5">
+            Enjoy These Seasonal Summer Time Flavors:
+          </div>
+          <div className="text-black text-4xl text-center pt-4 pb-5 mb-5">
+            PassionFruit Vanilla, Almond Peach Crumble, Rose Raspberry, Coconut
+            Guava
+          </div>
+          <Link href="/order" passHref>
+            <button className="button-83 text-2xl pt-6">Buy Now</button>
+          </Link>
+        </div>
       </div>
-      <div className="bg-[#fcf6e8]  h-screen flex flex-col items-center justify-center p-5 text-center">
+      <div className="  h-screen flex flex-col items-center justify-center p-5 text-center">
         <div className="text-black text-4xl">Welcome to</div>
         <div className="text-black text-6xl p-5 text-center">
           Celestine Crunch

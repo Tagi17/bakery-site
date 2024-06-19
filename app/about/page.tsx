@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import rome from "../rome.jpg";
 
 const About = () => {
@@ -13,14 +13,14 @@ const About = () => {
             Hi I&apos;m Nazia,
           </p>
           <p className="text-3xl text-mint-green mb-4 text-center leading-relaxed">
-            I&apos;m a 23 year old dessert enthusiast providing a range of baking
-            services to businesses and customers.
+            I&apos;m a 23 year old dessert enthusiast providing a range of
+            baking services to businesses and customers.
           </p>
           <p className="text-3xl text-mint-green mb-4 text-center leading-relaxed">
-            I&apos;ve always had a deep passion for baking since my childhood. In the past I wished to pursue a
-            professional culinary education, however, seeing
-            as I did not have the means to do so I decided to embark on my
-            culinary journey at home.
+            I&apos;ve always had a deep passion for baking since my childhood.
+            In the past I wished to pursue a professional culinary education,
+            however, seeing as I did not have the means to do so I decided to
+            embark on my culinary journey at home.
             {/* I discovered the joy of creating desserts after seeing my family and friends happy. Seeing them enjoying my sweets is always worth it to me. */}
           </p>
           <hr className="my-4 border-t border-soft-pink" />
@@ -30,7 +30,7 @@ const About = () => {
             little sweetness in life.
           </p>
           <div className="flex justify-center">
-            <Image src={rome} width={500} height={500} alt="me" />
+            <Image src={rome} width={400} height={300} alt="me" />
           </div>
         </div>
         <div className="flex justify-center">

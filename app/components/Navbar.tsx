@@ -5,7 +5,7 @@ import "../globals.css";
 import React, { useEffect, useRef, useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import logo from "../logo.png";
@@ -45,7 +45,6 @@ const Navbar = () => {
           </svg>
         </button>
 
-        {/* Website name centered */}
         <Link href="/">
           <div className="text-6xl font-bold cursor-pointer mx-auto flex-1 justify-center text-center tracking-widest">
             Celestine Crunch
